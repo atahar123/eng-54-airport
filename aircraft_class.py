@@ -1,4 +1,4 @@
 # aircraft class
 
 # attributes: cargo
-# define a couple of methods
+# define a couple of methods, accelerate and break
