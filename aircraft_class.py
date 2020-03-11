@@ -6,8 +6,9 @@
 
 class Aircraft():
     # define behaviours and characteristics
-    def __init__(self, cargo):
+    def __init__(self, cargo, plane):
         self.cargo = cargo
+        self.plane = plane
 
     # methods
     def accelerate(self):
