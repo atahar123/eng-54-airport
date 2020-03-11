@@ -14,11 +14,16 @@
 # as a user I can add a passenger names
 
 class flight_trip:
-    def __init__(self, origin, destination, plane_number):
+    def __init__(self, origin, destination, plane_number, passengers=[]):
         self.origin = origin
         self.destination = destination
         self.plane_number = plane_number
-        self.__passengers_list = []
+        self.__passengers = passengers
 
-    def add_passengers(self, input_passenger):
-        self.passengers_list.append([input_passenger])
+    def get_passengers(self):
+        return self.__passengers
+
+    def set_passengers(self, entry):
+        self.__passengers.append(entry)
+        return "New passenger: " + entry
+    
